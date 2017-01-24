@@ -18,8 +18,22 @@ html {
 		background: black;
 }
 
-body {
-		opacity: 0;
+a {
+		display: inline-block;
+		background-size: 6.5em;
+		width: 6.5em;
+		height: 6.5em;
+		margin: 1.5em;
+		-webkit-transition: -webkit-transform 0.5s ease, background 0.5s ease;
+		transition: transform 0.5s ease, background 0.5s ease;
+		background-repeat: no-repeat;
+		border-radius: 50%;
+}
+
+a:hover {
+	-webkit-transform: scale(1.1);
+	transform: scale(1.1);
+	border-radius: 50%;
 }
 
 h1, h2 {
@@ -27,21 +41,15 @@ h1, h2 {
 		font-weight: 200;
 		user-select: none;
 		-webkit-user-select: none;
-}
-
-h1 {
-		font-size: 7.5em;
 		margin: 0;
 }
 
-h2 {
-		font-size: 3em;
-		margin-top: 0em;
-		margin-bottom: 0.5em;
+h1 {
+		font-size: 8em;
 }
 
-.fade-body {
-		opacity: 1;
+h2 {
+		font-size: 4em;
 }
 
 .bg {
@@ -65,33 +73,13 @@ h2 {
 		position: relative;
 		top: 50%;
 		left: 50%;
+		text-align: center;
 		-webkit-transform: translateY(-50%) translateX(-50%);
 		transform: translateY(-50%) translateX(-50%);
-		text-align: center;
 }
 
-.center a {
-		display: inline-block;
-		background-size: 6em;
-		width: 6em;
-		height: 6em;
-		margin: 1.5em;
-		/*-webkit-transition: -webkit-transform 0.5s ease, background 0.5s ease;
-	transition: transform 0.5s ease, background 0.5s ease;*/
-		background-repeat: no-repeat;
-		z-index: 1;
-		border-radius: 50%;
-}
-
-
-/*.center a:hover {
-	-webkit-transform: scale(1.1);
-	transform: scale(1.1);
-	border-radius: 50%;
-}*/
-
-.music {
-		background-image: url(img/music.svg);
+.bandcamp {
+		background-image: url(img/bandcamp.svg);
 }
 
 .facebook {
@@ -100,16 +88,4 @@ h2 {
 
 .soundcloud {
 		background-image: url(img/soundcloud.svg);
-}
-
-.fade {
-		opacity: 1;
-		/*position: relative;*/
-}
-
-.faded {
-		/*-webkit-animation: fade 1s ease-out;
-	animation: fade 1s ease-out;
-	top: 0px;
-	opacity: 1;*/
 }

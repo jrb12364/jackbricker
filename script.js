@@ -14,15 +14,3 @@ $(document).ready(function() {
 				}
 		}, 100);
 });
-$(window).load(function() {
-		$('body').addClass('fade-body');
-		j = 1;
-		fade = setInterval(function() {
-				if (j <= $('.fade').length) {
-						$('.fade:nth-child(' + j + ')').addClass('faded');
-				} else {
-						clearInterval(fade);
-				}
-				j++;
-		}, fadeSpeed);
-});
