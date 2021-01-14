@@ -11,26 +11,6 @@ html {
 		background: black;
 }
 
-a {
-		display: inline-block;
-		background-size: 6.5em;
-		width: 6.5em;
-		height: 6.5em;
-		margin: 1.5em;
-		-webkit-transition: -webkit-transform 0.5s ease, background 0.5s ease;
-		-moz-transition: -moz-transform 0.5s ease, background 0.5s ease;
-		transition: transform 0.5s ease, background 0.5s ease;
-		background-repeat: no-repeat;
-		border-radius: 50%;
-}
-
-a:hover {
-	-webkit-transform: scale(1.1);
-	-moz-transform: scale(1.1);
-	transform: scale(1.1);
-	border-radius: 50%;
-}
-
 h1, h2 {
 		font-family: 'Lato', 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 		font-weight: 200;
@@ -46,6 +26,28 @@ h1 {
 
 h2 {
 		font-size: 4em;
+}
+
+#icon {
+		display: inline-block;
+		background-size: 6.5em;
+		width: 6.5em;
+		height: 6.5em;
+		margin: 1.5em;
+		-webkit-transition: -webkit-transform 0.5s ease, background 0.5s ease;
+		-moz-transition: -moz-transform 0.5s ease, background 0.5s ease;
+		transition: transform 0.5s ease, background 0.5s ease;
+		background-repeat: no-repeat;
+		border-radius: 50%;
+		color: #FFFFFF;
+		opacity: 0.84;
+}
+
+#icon:hover {
+	-webkit-transform: scale(1.1);
+	-moz-transform: scale(1.1);
+	transform: scale(1.1);
+	border-radius: 50%;
 }
 
 .bg {
@@ -80,10 +82,10 @@ h2 {
 		background-image: url(img/bandcamp.svg);
 }
 
-.facebook {
-		background-image: url(img/facebook.svg);
-}
-
 .soundcloud {
 		background-image: url(img/soundcloud.svg);
+}
+
+.twitter {
+		background-image: url(img/twitter.svg);
 }
